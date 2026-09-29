@@ -342,6 +342,27 @@ section{ padding-block:44px; }
 footer{ background:var(--white); color:var(--ink-soft); text-align:center; padding:30px 0 0; overflow:hidden; }
 footer .script{ font-size:40px; color:var(--maroon); }
 footer p{ font-size:12px; opacity:.85; margin-top:8px; letter-spacing:.05em; }
+footer .credit{
+  display:flex; flex-direction:column; align-items:center; gap:9px;
+  padding:16px 16px calc(18px + env(safe-area-inset-bottom,0px));
+  background:var(--white); border-top:1px solid rgba(184,146,74,.25);
+}
+footer .credit-btn{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:7px 8px 7px 12px; border:1px solid var(--gold); border-radius:999px;
+  color:var(--ink-soft); font-size:11px; letter-spacing:.06em; text-decoration:none;
+  transition:background .25s ease, box-shadow .25s ease;
+}
+footer .credit-btn svg{ flex:none; display:block; color:var(--maroon); }
+footer .credit-btn span{ line-height:1; }
+footer .credit-btn b{ font-weight:500; color:var(--maroon); }
+footer .credit-btn em{
+  font-style:normal; font-size:10px; letter-spacing:.1em; text-transform:uppercase;
+  background:var(--maroon); color:#fff; padding:4px 10px; border-radius:999px; line-height:1;
+}
+footer .credit-btn:hover, footer .credit-btn:focus-visible{
+  background:rgba(184,146,74,.1); box-shadow:0 2px 10px rgba(122,30,42,.12);
+}
 
 /* ---------- music toggle ---------- */
 .music-frame{
